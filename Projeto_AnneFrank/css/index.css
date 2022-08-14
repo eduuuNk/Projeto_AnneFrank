@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+	height: 100%;
+	background: #2980B9;  
+    background: -webkit-linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to top, #FFFFFF, #6DD5FA, #2980B9);
+}
+header{
+	background-color: #000080;
+	box-shadow: 0px 3px 10px #464646;
+}
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 6rem;
+}
+.logo img{
+	width: 50px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.nav-listem{
+	display: flex;
+	justify-content: center;
+}
+.nav-listem ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+.nav-item{
+	margin: 0 15px;
+}
+.nav-link{
+	text-decoration: none;
+	font-size: 1.15rem;
+	color: #fff;
+	font-weight: 400;
+}
+.nav-link:hover{
+    color: #1E90FF;
+}
+.nav-btn button{
+	border: none;
+	background-color: transparent;
+	padding: 10px 15px;
+	border-radius: 5px;
+	transition: 0.5s;
+}
+.nav-btn button:hover{
+	background-color: #1E90FF;
+}
+.nav-btn button a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1.1rem;
+}
+.mobile-menu-icon{
+	display: none;
+}
+.mobile-menu{
+	display: none;
+}
+
+@media screen and(max-width: 730px){
+	.nav-bar{
+		padding: 1.5rem 4rem;
+	}
+	.nav-item{
+		display: none;
+	}
+	.nav-btn{
+		display: none;
+	}
+	.mobile-menu-icon{
+		display: block;
+	}
+	.mobile-menu-icon button{
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.menu-mobile ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.menu-mobile .nav-item{
+		display: block;
+		padding: 1rem 2rem;
+	}
+	.menu-mobile .nav-btn button{
+		width: 100%;
+	}
+	.open{
+		display: block;
+	}
+}
+.inicio{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+.imagem img{
+	border-radius: 50%;
+	border: 2px solid #fff;
+}
+.title{
+	padding: 0.5rem;
+}
+.title h1{
+
+}
