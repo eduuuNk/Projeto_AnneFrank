@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<title>Anne Frank | Home</title>
 	<script src="js/home.js"></script>
+	<!-- Font Awesone CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div class="container">
@@ -28,7 +30,22 @@
 						<button><a href="cadastro.html">Sign Up</a></button>
 						<button><a href="login.html">Sign In</a></button>
 					</div>
+
+					<div class="mobile-menu-icon">
+						<button onclick="MenuShow()" class="icon"><img src="imagens/menu_white_36dp.svg"></button>
+					</div>
         		</nav>
+        		<div class="mobile-menu">
+        			<ul>
+						<li class="nav-item"><a href="" class="nav-link">Início</a></li>
+						<li class="nav-item"><a href="" class="nav-link">Por que Anne Frank?</a></li>
+						<li class="nav-item"><a href="" class="nav-link">Membros</a></li>
+					</ul>
+					<div class="nav-btn">
+						<button><a href="cadastro.html">Sign Up</a></button>
+						<button><a href="login.html">Sign In</a></button>
+					</div>
+        		</div>
 			</header>
 		</div><!-- Fim da header-anne-->
 
@@ -39,5 +56,17 @@
 			</div>
 		</div>
 	</div><!-- Fim do container-->
+	<script type="text/javascript">
+		function MenuShow() {
+	let menuMobile = document.querrySelector('.mobile-menu');
+	if (menuMobile.classList.contains('open')) {
+		menuMobile.classList.remove('open');
+		document.querrySelector('.icon').src = "imagens/menu_white_36dp.svg";
+	}else{
+		menuMobile.classList.add('open');
+		document.querrySelector('.icon').src = "imagens/close_white_36dp.svg";	
+	}
+}
+	</script>
 </body>
 </html>
