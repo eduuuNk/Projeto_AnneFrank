@@ -3,6 +3,11 @@
 	margin: 0;
     padding: 0;
     box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+*{
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 header{
@@ -78,8 +83,24 @@ header{
 .mobile-menu{
     display: none;
 }
-
-@media screen and(max-width: 730px){
+.inicio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
     .nav-bar{
         padding: 1.5rem 4rem;
     }
@@ -111,12 +132,4 @@ header{
     .open{
         display: block;
     }
-}
-.inicio{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem;
 }
